@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(../../assets/marte.jpg);
+    background-position: center;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+
+.cabeçalho {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    height: 10vh;
+    background-image: url(../../assets/ceu.png);
+    background-position: 0% 50%;
+    animation: mover-fundo 120s linear infinite;
+
+
+}
+
+@keyframes mover-fundo {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.botão-a {
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    height: 5vh;
+    text-decoration: none;
+    border: solid 1px rgb(255, 255, 255);
+    background-color: rgb(216, 89, 80);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.botão-a:hover {
+    background-color: rgb(158, 29, 7);
+}
+
+.informações {
+    background-color: rgba(236, 147, 147, 0.404);
+    backdrop-filter: blur(10px);
+    height: 70vh;
+    width: 85%;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.textos {
+    color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.hr-texto {
+    background-color: rgba(255, 255, 255, 0.747);
+    border: none;
+    height: 2px;
+    border-radius: 15px;
+}
+
+.text-2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+footer {
+    background-image: url(../../assets/ceu.png);
+    background-position: 0% 50%;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: mover-fundo 120s linear infinite;
+}
+
+.imagen-texto {
+    display: none;
+}
+
+.imagen-texto2 {
+    display: none;
+}
+
+
+
+
+@media (min-width: 600px) {
+
+    .informações {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .textos {
+        font-size: 14px;
+    }
+
+    .text-2 {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .informações {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        background-color: rgba(240, 248, 255, 0);
+
+    }
+
+    .textos {
+        flex: 1;
+        display: flex;
+        font-size: 13px;
+
+    }
+
+    .text-2 {
+        flex: 1;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+
+    .hr-texto {
+        display: none;
+    }
+
+    .container {
+        background-image: url(../../assets/marte.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .imagen-texto {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .imagen-texto2 {
+        display: flex;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .informações {
+        width: 60%;
+    }
+
+    .textos {
+        font-size: 13px;
+    }
+
+    .text-2 {
+        display: flex;
+
+        justify-content: flex-end;
+        font-size: 13px;
+    }
+
+    .imagen-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .imagen-texto2 {
+        height: 20vh;
+    }
+
+    .cabeçalho {
+        height: 10vh;
+        background-image: url(../../assets/ceu.png);
+        background-position: 0% 50%;
+        animation: mover-fundo 10s linear infinite;
+
+
+    }
+
+    @keyframes mover-fundo {
+        0% {
+            background-position: 10% 50%;
+        }
+
+        50% {
+            background-position: 90% 40%;
+        }
+
+        100% {
+            background-position: 10% 40%;
+        }
+    }
+
+    footer{
+        animation: mover-fundo 10s linear infinite;
+    }
+    
+}
+
+@media (min-width: 1500px) {
+    .textos {
+        font-size: 18px;
+    }
+
+    .text-2 {
+        font-size: 18px;
+    }
+}

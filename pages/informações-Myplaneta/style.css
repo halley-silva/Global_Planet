@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 1rem;
+    background-color: rgb(218, 225, 245);
+}
+
+
+
+h1 {
+    color: rgb(45, 45, 45);
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    width: 100%;
+    height: 6vh;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+#botão-voltar {
+    padding: 7px;
+    border: 1px solid rgb(160, 160, 160);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    border-radius: 10px;
+}
+
+#botão-voltar:hover {
+    background-color: aliceblue;
+}
+
+
+
+.botão-h1 {
+    display: flex;
+    gap: 1rem;
+    white-space: nowrap;
+    font-size: 13px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+#texto-header {
+    font-size: 16px;
+    color: rgb(107, 107, 107);
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.informação-planeta {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    height: 60vh;
+    width: 90%;
+    border-radius: 20px;
+}
+
+
+.imagen-planeta {
+    flex: 1;
+    background-image: url(../../assets/marte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 10px;
+}
+
+.texto-planeta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+    padding: 10px;
+
+}
+
+.salvo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    align-items: end;
+    font-size: 10px;
+}
+
+.paragrafos {
+    color: rgb(81, 81, 81);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.final {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    padding: 14px;
+    align-items: start;
+
+
+}
+
+.final-imagen {
+    display: flex;
+    gap: 0.5rem;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 10px;
+    width: 250px;
+    background-color: white;
+
+}
+
+.final-imagen:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.final-imagem-ajuda {
+    display: flex;
+    gap: 0.5rem;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 10px;
+    width: 90px;
+    background-color: white;
+
+
+}
+
+.final-imagem-ajuda:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.caixa-pai-de-todos {
+    width: 100%;
+}
+
+.localização-inicio {
+    display: none;
+}
+
+@media (min-width: 459px) {
+    .final {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 650px) {
+
+    .caixa-pai-de-todos {
+        width: 600px;
+    }
+
+    .final {
+        width: 600px;
+    }
+}
+
+@media (min-width: 840px) {
+
+    .localização-inicio {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        height: 12vh;
+        border-radius: 15px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        width: 600px;
+    }
+    
+
+    .planets {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(180, 202, 236);
+        height: 12vh;
+        border-radius: 15px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .final {
+        width: 560px;
+    }
+
+    .inicio:hover {
+        background-color: rgb(228, 228, 228);
+    }
+
+    .planets:hover {
+        background-color: rgb(228, 228, 228);
+    }
+
+    .caixa-pai-de-todos {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    .conteudo-e-final{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
