@@ -76,8 +76,9 @@ main {
     border-radius: 20px;
     gap: 1rem;
     background-color: rgba(240, 248, 255, 0);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     padding-bottom: 20px;
+    border: solid 1px rgba(255, 255, 255, 0.485);
 
     
     
@@ -198,7 +199,7 @@ p {
 #Clique-aqui-link {
     text-decoration: none;
 
-    color: rgb(212, 212, 212);
+    color: rgb(255, 255, 255);
 
 }
 
@@ -211,10 +212,6 @@ p {
 
 }
 
-#caixinha {
-    display: flex;
-    gap: 10px;
-}
 
 #esqueci-senha {
     text-decoration: none;
@@ -344,24 +341,34 @@ p {
     .caixa {
         display: flex;
         flex-direction: row-reverse;
-        height: 100%;
+        height: 100vh;
         width: 100%;
+        gap: 1rem;
+        padding-bottom: 30px;
+        
     }
 
     .imagenn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex: 1;
-        background-image: url(../../assets/astronauta.png);
+    }
+
+    .posicionar_imagen{
+        background-image: url(../../assets/nave_espacial.png);
         background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 20px;
+        background-repeat: no-repeat;  
+        width: 70%;
+        height: 70%;  
     }
 
 
     header {
         display: flex;
         flex-direction: column;
-        justify-content: right;
+        align-items: center;
         width: 100%;
     }
 
@@ -386,6 +393,9 @@ p {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        width: 80%;
+        
+        
     }
 
   
@@ -395,10 +405,11 @@ p {
         width: 360px;
     }
 
-    .sem_conta {
-        display: flex;
-        width: 400px;
+    .sem_conta{
+        width: 100%;
     }
+
+    
 
 
 }
