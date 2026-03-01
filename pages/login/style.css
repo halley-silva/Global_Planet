@@ -21,18 +21,28 @@ body {
 
 .caixa {
     display: flex;
+<<<<<<< HEAD
     background-image: url(../../assets/elena-mozhvilo-znhEe1cbbQE-unsplash.jpg);
+=======
+    background-image: url(../../assets/Céu\ estrelado\ suave\ e\ sereno.png);
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     
     width: 100%;
     height: 100vh;
+<<<<<<< HEAD
     
     justify-content: center;
     padding: 2px;
     padding-left: 15px;
     padding-right: 15px;
+=======
+    border-radius: 30px;
+    justify-content: center;
+    padding: 15px;
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
 }
 
 
@@ -62,6 +72,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     width: 100%;
     height: 90%;
     padding: 20px;
@@ -69,6 +80,12 @@ main {
     gap: 1rem;
     background-color: rgba(240, 248, 255, 0);
     backdrop-filter: blur(10px);
+=======
+    width: 80%;
+    height: 90%;
+    padding: 20px;
+    gap: 1rem;
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
 }
 
 .titulo {
@@ -83,12 +100,18 @@ main {
 
 .titulo h2 {
     font-size: 35px;
+<<<<<<< HEAD
     color: white;
+=======
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
 }
 
 .titulo p {
     font-size: 20px;
+<<<<<<< HEAD
     color: white;
+=======
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
 }
 
 .formulario {
@@ -105,8 +128,12 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+<<<<<<< HEAD
     width: 280px;
     
+=======
+    width: 270px;
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
 }
 
 form {
@@ -121,8 +148,15 @@ form {
 .inputs-login {
     padding: 15px;
     border-radius: 7px;
+<<<<<<< HEAD
     border: solid 1px rgba(255, 255, 255, 0);
     width: 290px;
+=======
+    border-color: rgb(213, 213, 213);
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
     color: rgb(20, 45, 73);
 
 }
@@ -134,7 +168,10 @@ form {
     white-space: nowrap;
     text-align: center;
     font-size: 16px;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
 }
 
 .botão {
@@ -147,8 +184,14 @@ form {
     padding: 17px;
     color: white;
     border-radius: 7px;
+<<<<<<< HEAD
     background-color: rgb(50, 142, 240);
     border: solid 1px rgba(255, 255, 255, 0);
+=======
+    background-color: rgb(96, 96, 99);
+    border-color: rgb(134, 132, 132);
+    border-width: 1px;
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
     cursor: grab;
     width: 100%;
 }
@@ -166,15 +209,22 @@ p {
 
 #Clique-aqui-link {
     text-decoration: none;
+<<<<<<< HEAD
     color: rgb(212, 212, 212);
+=======
+    color: rgb(138, 137, 137);
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
 
 }
 
 .sem_conta {
     text-align: center;
     font-size: 15px;
+<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
+=======
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
 }
 
 #caixinha {
@@ -184,11 +234,15 @@ p {
 
 #esqueci-senha {
     text-decoration: none;
+<<<<<<< HEAD
     color: rgb(255, 255, 255);
 }
 
 .não_conta{
     color: white;
+=======
+    color: rgb(113, 113, 113);
+>>>>>>> 6609c649758fc8574562e6fc1fb9a7829b7a1380
 }
 
 /* Mobile Grande */
