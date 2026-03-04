@@ -22,13 +22,15 @@ body{
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url(../../assets/saturno_pintura.png);
+    background-image: url(../../assets/elena-mozhvilo-znhEe1cbbQE-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 15px;
     
     
 }
+
 
 .informações{
     flex: 1;
@@ -37,6 +39,11 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(7px);
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding: 10px;
     
 
 }
@@ -44,6 +51,10 @@ body{
     font-size: 35px;
     color: rgb(255, 255, 255);
 
+ }
+
+ .cabeçalho{
+    display: none;
  }
 
  #texto{
@@ -66,15 +77,25 @@ body{
     
 }
 
-main{
-    height: 90vh;
+form{
+    height: 60vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.5rem;
     
 }
+
+.mensagens_invalidas{
+    color: rgb(255, 4, 4);
+    display: none;
+    font-size: 15px;
+   
+    
+}
+
+
 
 .formulario{
     display: flex;
@@ -91,7 +112,7 @@ main{
 
 input{
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: solid 1px rgba(175, 175, 175, 0);
     width: 270px;
     
@@ -109,13 +130,13 @@ input{
     padding: 15px;
     color: rgb(255, 255, 255);
     border-radius: 20px;
-    border: solid 1px rgb(175, 175, 175);
+    border: solid 1px rgba(175, 175, 175, 0);
     width: 270px;
-    background-color: #3055ce;
+    background-color: rgb(56, 136, 227);
 }
 
 .botão:hover{
-    background-color: rgb(143, 160, 179);
+    background-color: rgb(92, 176, 245);
 }
 
 @media (min-width: 600px){
@@ -134,48 +155,37 @@ input{
     }
 
     input{
-        width: 70%;
+        width: 400px;
     }
 
     .generos{
         width: 70%;
+    }
+
+    .botão{
+        width: 400px;
     }
     
 }
 
-@media (min-width: 768px){
-    input{
-        width: 60%;
-        padding: 18px;
-    }
 
-    .generos{
-        width: 60%;
-    }
-
-    .botão{
-        width: 70%;
-    }
-}
 
 @media (min-width: 1200px){
     .informações{
         flex: 1;
+        
     }
 
     .imagen{
-        flex: 1;
-        display: block;
-        background-image: url(../../assets/astronauta-cadastrar.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        width: 40%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 20px;
     }
 
-    .sexo{
-        width: 10%;
-    }
+    
 
     .outro{
         width: 10%;
@@ -183,9 +193,7 @@ input{
         margin-left: 12px;
     }
 
-    .botão{
-        width: 60%;
-    }
+    
 }
 
 

@@ -52,11 +52,6 @@ body {
 
 }
 
-.imagen {
-    display: none;
-    background-image: url(../../assets/astronautaa.png);
-
-}
 
 header {
     display: flex;
@@ -152,23 +147,33 @@ form {
 
 }
 
-.marcar {
+
+.conjunto{
     display: flex;
-    gap: 5rem;
     justify-content: space-between;
-    white-space: nowrap;
-    text-align: center;
-    font-size: 16px;
-
+    width: 280px;
     
+}
 
+.lembrar{
+    display: flex;
+    gap: 0.5rem;
+ 
+}
 
+.lembrar p{
+    color: white;
 }
 
 .botão {
     display: flex;
     justify-content: center;
+    margin: 5px;
 
+}
+
+#Enviar:hover{
+    background-color: rgb(92, 176, 245);
 }
 
 #Enviar {
@@ -206,7 +211,7 @@ p {
 .sem_conta {
     text-align: center;
     font-size: 15px;
-    width: 286px;
+    width: 280px;
     display: flex;
     justify-content: space-between;
 
@@ -238,6 +243,10 @@ p {
         width: 190px;
     }
 
+    .conjunto{
+        width: 400px;
+    }
+
     .titulo h2 {
         font-size: 45px;
     }
@@ -251,6 +260,10 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .sem_conta{
+        width: 400px;
     }
 
     .inputs {
@@ -282,9 +295,9 @@ p {
 
     .sem_conta {
         font-size: 15px;
-        width: 610px;
+        
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
 }
@@ -356,12 +369,13 @@ p {
     }
 
     .posicionar_imagen{
-        background-image: url(../../assets/nave_espacial.png);
+        background-image: url(../../assets/Cabeça\ de\ alien\ em\ estilo\ pixel\ art.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;  
         width: 70%;
-        height: 70%;  
+        height: 80%; 
+        
     }
 
 
@@ -372,21 +386,22 @@ p {
         width: 100%;
     }
 
+
     #logo {
         width: 140px;
     }
 
     .titulo h2 {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .titulo p {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .inputs-login {
         width: 360px;
-        padding: 12px;
+        padding: 17px;
     }
 
     main {
@@ -401,14 +416,21 @@ p {
   
 
     #Enviar {
-        padding: 12px;
+        padding: 17px;
         width: 360px;
     }
 
     .sem_conta{
-        width: 100%;
+        width: 50%;
+        font-size: 15px;
     }
 
+    .conjunto{
+        font-size: 15px;
+       
+        width: 50%;
+    
+    }
     
 
 

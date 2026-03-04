@@ -17,37 +17,60 @@
         <div class="informações">
             <header class="cabeçalho">
                 <div class="logo">
-                    <img src="../../assets/logo-global-planet.png" width="200px">
+                    <img src="../../assets/logo-global-planet.png" width="100px">
                 </div>
-               
+
             </header>
 
-            <main>
+            <form onsubmit= "verificarcampos(event)">
 
                 <h1>Olá Cadastre-se</h1>
                 <p id="texto">Descubra novas aventuras</p>
-                
+
                 <footer class="formulario">
                     <input type="text" placeholder="Nome" id="input_nome">
-                    <input type="email" placeholder="Gmail" id="input_gmail">
-                  
-                    <input type="text" placeholder="Endereço" id="input_endereço">
-                    <input type="password" placeholder="Senha" id="input_senha">
-                    <input type="password" placeholder="Confirme Senha" id="input_confirmarSenha">
-                </footer>
-            </main>
+                    <span class="mensagens_invalidas" id="erro_name">Nome invalido !</span>
 
-            <section class="final">
-                <button class="botão" type="submit">Salvar</button>
-            </section>
+                    <input type="number" placeholder="CPF" id="input_CPF">
+                    <span class="mensagens_invalidas" id="erro_cpf">CPF invalido</span>
+
+                    <input type="gmail" placeholder="Gmail" id="input_gmail">
+                    <span class="mensagens_invalidas" id="erro_gmail">Gmail invalido</span>
+
+                    <input type="text" placeholder="Endereço" id="input_endereco">
+                    <span class="mensagens_invalidas" id="erro_endereco">Endereço invalido</span>                  
+
+                    <input type="number" placeholder="Número Telefone" id="input_telefone">
+                    <span class="mensagens_invalidas" id="erro_telefone">Telefone invalido</span>          
+
+                    <input type="password" placeholder="Senha" id="input_senha">
+                    <span class="mensagens_invalidas" id="erro_senha">Senha invalida</span>
+
+                    <input type="password" placeholder="Confirme Senha" id="input_confirmarSenha">
+                    <span class="mensagens_invalidas" id="erro_confirmar_senha">Senha diferentes</span>
+                    
+                    
+                    
+                <div class="final">
+                    
+                    <button class="botão" type="submit">Salvar</button>
+                </div>
+                    
+
+            
+            </form>
+
 
         </div>
-        <div class="imagen">
 
+        <div class="imagen">
+            <img src="../../assets/nave_espacial.png" width="500px">
+ 
         </div>
     </div>
 
 
 </body>
 <script src="scrip.js"></script>
+
 </html>

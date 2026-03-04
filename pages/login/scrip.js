@@ -1,23 +1,26 @@
-// Criar as variaveis que vão receber os valores dos "inputs".
-let input_gmail = document.getElementById("input_gmail");
-let input_senha = document.getElementById("input_senha");
+const inputgmail = document.getElementById("input_gmail");
+const inputsenha = document.getElementById("input_senha");
 
-// Dar um nome para a função para chamar ela
-function verificar_login() {
+function login(eventrec) {
+     
+    event.preventDefault(eventrec) // form não reniciar a tela
+    // Criar as variaveis que vão receber os valores
+    const valorgmail = inputgmail.value;
+    const valorsenha = inputsenha.value;
 
-    // Value para pegar somente o valor
-    if(input_gmail.value === "admin" && input_senha.value === "1234") { // Usar sempre === por questão de segurança.
-        alert("Entrando");
-        // Quando o usuario acertar o login ele ira para a pagina principal do cite.
+    // Criar as varivaies para armezar o valor original (BOA PRATICA)
+    const GMAIL_VALIDO = "admin@admin.com";
+    const SENHA_VALIDA = "0153";
+
+    if(valorgmail === GMAIL_VALIDO && valorsenha == SENHA_VALIDA) {
         window.location.href = "../../index.html"
+        
 
     } else {
         
-        alert("Login e senha Invalidos")
+        alert("invalido")
 
-        // Quando a estrutura do else for executada
-        // Ele irá pegar o elemento do classe
-        document.getElementById("texto_erro").style.display = "block";
-    }
+    };
+   
 }
 

@@ -32,7 +32,7 @@ body {
 .caixa {
     display: flex;
     flex-direction: row-reverse;
-    background-image: url(../../assets/jupiter_pintura.png);
+    background-image: url(../../assets/elena-mozhvilo-znhEe1cbbQE-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@ main{
 .informações{
     display: flex;
     flex-direction: column;
-    height: 55vh;
+    height: 50vh;
     width: 100%;
     align-items: center;
     gap: 2rem;
@@ -106,8 +106,12 @@ h1 {
     border: solid 1px rgba(197, 197, 197, 0);
     padding: 13px;
     width: 290px;
-    background-color: rgb(227, 148, 56);
+    background-color: rgb(56, 136, 227);
     cursor: grab;
+}
+
+button:hover{
+    background-color: rgb(93, 158, 231);
 }
 
 #voltar-login-texto {
@@ -157,9 +161,14 @@ h1 {
     }
 
     .informações{
-        height: 60vh;
+        height: 35vh;
         width: 50%;
         display: flex;
+        
+    }
+
+    #enviar-gmail{
+        width: 380px;
         
     }
 
