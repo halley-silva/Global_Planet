@@ -22,42 +22,63 @@
 
             </header>
 
-            <form onsubmit= "verificarcampos(event)">
+            <form onsubmit="verificarcampos(event)">
 
                 <h1>Olá Cadastre-se</h1>
                 <p id="texto">Descubra novas aventuras</p>
 
-                <footer class="formulario">
-                    <input type="text" placeholder="Nome" id="input_nome">
-                    <span class="mensagens_invalidas" id="erro_name">Nome invalido !</span>
+                <footer class="formulario" id="propriedades_formulario">
+                    <div class="divisoria_input1">
+                        <div class="separar_iputs">
+                            <input type="text" placeholder="Nome" id="input_nome">
+                            <span class="mensagens_invalidas" id="erro_name">Nome invalido !</span>
+                        </div>
 
-                    <input type="number" placeholder="CPF" id="input_CPF">
-                    <span class="mensagens_invalidas" id="erro_cpf">CPF invalido</span>
 
-                    <input type="gmail" placeholder="Gmail" id="input_gmail">
-                    <span class="mensagens_invalidas" id="erro_gmail">Gmail invalido</span>
+                        <div class="separar_iputs">
+                            <input type="number" placeholder="CPF" id="input_CPF">
+                            <span class="mensagens_invalidas" id="erro_cpf">CPF invalido</span>
+                        </div>
+                    </div>
 
-                    <input type="text" placeholder="Endereço" id="input_endereco">
-                    <span class="mensagens_invalidas" id="erro_endereco">Endereço invalido</span>                  
+                    <div class="divisoria_input1">
+                        <div class="separar_iputs">
+                            <input type="gmail" placeholder="Gmail" id="input_gmail">
+                            <span class="mensagens_invalidas" id="erro_gmail">Gmail invalido</span>
+                        </div>
 
-                    <input type="number" placeholder="Número Telefone" id="input_telefone">
-                    <span class="mensagens_invalidas" id="erro_telefone">Telefone invalido</span>          
+                        <div class="separar_iputs">
+                            <input type="text" placeholder="Endereço" id="input_endereco">
+                            <span class="mensagens_invalidas" id="erro_endereco">Endereço invalido</span>
+                        </div>
+                    </div>
 
-                    <input type="password" placeholder="Senha" id="input_senha">
-                    <span class="mensagens_invalidas" id="erro_senha">Senha invalida</span>
+                    <div class="divisoria_input1">
+                        <div class="separar_iputs">
+                            <input type="password" placeholder="Senha" id="input_senha">
+                            <span class="mensagens_invalidas" id="erro_senha">Senha invalida</span>
+                        </div>
 
-                    <input type="password" placeholder="Confirme Senha" id="input_confirmarSenha">
-                    <span class="mensagens_invalidas" id="erro_confirmar_senha">Senha diferentes</span>
-                    
-                    
-                    
-                <div class="final">
-                    
-                    <button class="botão" type="submit">Salvar</button>
-                </div>
-                    
+                        <div class="separar_iputs">
+                            <input type="password" placeholder="Confirme Senha" id="input_confirmarSenha">
+                            <span class="mensagens_invalidas" id="erro_confirmar_senha">Senha diferentes</span>
+                        </div>
+                    </div>
 
-            
+                    <div class="separar_iputs">
+                        <input type="number" placeholder="Número Telefone" id="input_telefone">
+                        <span class="mensagens_invalidas" id="erro_telefone">Telefone invalido</span>
+                    </div>
+
+
+
+                    <div class="final">
+
+                        <button class="botão" type="submit">Salvar</button>
+                    </div>
+
+
+
             </form>
 
 
@@ -65,7 +86,7 @@
 
         <div class="imagen">
             <img src="../../assets/nave_espacial.png" width="500px">
- 
+
         </div>
     </div>
 

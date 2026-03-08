@@ -49,7 +49,51 @@ function validaCPF(cpf) {
 };
 
 
+function salva_dados() {
+    const salvar_nome = document.getElementById("input_nome").value;
+    const salvar_CPF = document.getElementById("input_CPF").value;
+    const salvar_gmail = document.getElementById("input_gmail").value;
+    const salvar_endereco = document.getElementById("input_endereco").value;
+    const salvar_senha = document.getElementById("input_senha").value
+    const salvar_telefone = document.getElementById("input_telefone").value;
 
+
+    // Salvar os valores em um obejto
+    const dados = {
+        nome: salvar_nome,
+        CPF: salvar_CPF,
+        gmail: salvar_gmail,
+        endereço: salvar_endereco,
+        senha: salvar_senha,
+        telefone: salvar_telefone
+    }
+
+
+    
+    // Criar a lista
+    let lista_dados = [];
+
+    
+    // Aqui ele pega o dado antigo no nome de cadastros e adiona a dados antigos
+    const dados_antigos = JSON.parse(localStorage.getItem("Cadastros"))
+  
+
+
+    // Se dados antigos tiver prenchido 
+    if (dados_antigos) {
+        lista_dados = dados_antigos // Atrinua a lista dados
+    }
+
+    lista_dados.push(dados) // Aqui pego o dado novo e adiciono na lista
+   
+    // Adicionar no
+    localStorage.setItem("Cadastros", JSON.stringify(lista_dados))
+    
+   
+
+    
+
+}
 
 // Função para verificar campos.
 
@@ -70,24 +114,28 @@ function verificarcampos(eventrec) {
 
     const inputconfirmar = document.getElementById("input_confirmarSenha").value;
 
+    var ver = true // Criar uma variavel com true, e quando as condições cair no else essa variavel vira false
 
     /// Nome /////////////////////////////////////////////
     const erronome = document.getElementById("erro_name"); // Pegar o span quer eu criei
     const cor_borda_nome = document.getElementById("input_nome"); // Pegar apenas o input não o valor
+    const formulario = document.getElementById("propriedades_formularios")
 
 
     if (!inputnome || inputnome.length < 3) {
         erronome.style.display = "flex" // Entrar no span ir no css e muldar o display
 
+        ver = false
         cor_borda_nome.style.border = "1px solid red" // Entrar no input ir no css e aplicar na borda
 
     } else {
         // Devolver as propriedades padrão
         erronome.style.display = "none"
-
         cor_borda_nome.style.border = "solid 1px rgba(175, 175, 175, 0)"
-    }
 
+        
+        
+    }
     ////// CPF //////////////////////////////////////////////
     const errocpf = document.getElementById("erro_cpf");
     const cor_borda_cpf = document.getElementById("input_CPF");
@@ -95,23 +143,32 @@ function verificarcampos(eventrec) {
     if (!validaCPF(inputcpf)) {
         errocpf.style.display = "flex"
         cor_borda_cpf.style.border = "1px solid red"
+        ver = false
 
     } else {
         errocpf.style.display = "none"
         cor_borda_cpf.style.border = "solid 1px rgba(175, 175, 175, 0)"
+
+       
     }
 
     ////// Gmail /////////////////////////////////////////////
     const errogmail = document.getElementById("erro_gmail");
     const cor_borda_gmail = document.getElementById("input_gmail")
 
+
+
     if (!inputgmail || inputgmail.length < 6) {
         errogmail.style.display = "flex"
         cor_borda_gmail.style.border = "1px solid red"
+        ver = false
 
     } else {
         errogmail.style.display = "none"
         cor_borda_gmail.style.border = "solid 1px rgba(175, 175, 175, 0)"
+
+       
+
     }
 
     /////// Endereço ////////////////////////////////////////
@@ -121,10 +178,13 @@ function verificarcampos(eventrec) {
     if (!inputendereco || inputendereco.length < 10) {
         erroendereco.style.display = "flex"
         cor_borda_endereco.style.border = "1px solid red"
+        ver = false
 
     } else {
         erroendereco.style.display = "none"
         cor_borda_endereco.style.border = "solid 1px rgba(175, 175, 175, 0)"
+
+       
     }
 
     ///////// Número //////////////////////////////////////////  
@@ -134,23 +194,30 @@ function verificarcampos(eventrec) {
     if (!inputnumero || inputnumero.length < 9) {  // .length para ler o coprimento
         erronumero.style.display = "flex"
         cor_borda_telefone.style.border = "1px solid red"
+        ver = false
 
     } else {
         erronumero.style.display = "none"
         cor_borda_telefone.style.border = "solid 1px rgba(175, 175, 175, 0)"
+
+        
     }
 
     /////////// Senha //////////////////////////////////////
     const errosenha = document.getElementById("erro_senha")
     const cor_borda_senha = document.getElementById("input_senha")
 
+
+
     if (!inputsenha || inputsenha.length < 8) {
         errosenha.style.display = "flex"
         cor_borda_senha.style.border = "1px solid red"
+        ver = false
 
     } else {
         errosenha.style.display = "none"
         cor_borda_senha.style.border = "solid 1px rgba(175, 175, 175, 0)"
+
     }
 
     //////////// Confirmar senha ///////////////////////////
@@ -160,13 +227,20 @@ function verificarcampos(eventrec) {
     if (inputconfirmar !== inputsenha) {
         erroconfirmar.style.display = "flex"
         cor_borda_confirmar.style.border = "1px solid red"
+        ver = false
 
     } else {
-        erroconfirmar.style.dysplay = "none"
+        erroconfirmar.style.display = "none"
         cor_borda_confirmar.style.border = "solid 1px rgba(175, 175, 175, 0)"
+
+        
     }
 
-
+    // Verificar para ativar a função
+    if (ver) {
+        salva_dados()
+        window.location.href = "../../index.html"
+    }
 
 
 
