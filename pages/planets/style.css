@@ -142,6 +142,7 @@ hr{
     border-radius: 22px;
     transition: transform .3s;
     text-decoration: none;
+    padding: 4px;
 }
 
 .card:hover {
@@ -150,7 +151,7 @@ hr{
 
 
 .imagen {
-    height: 45vh;
+    height: 40vh;
     background-image: url(../../assets/marte.jpg);
     background-position: center;
     background-size: cover;
@@ -158,6 +159,8 @@ hr{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
+
 
 #segundo-card .imagen {
     background-image: url(../../assets/Jupiter.png);
@@ -183,24 +186,14 @@ hr{
 
 .nome-dos-planetas-marte{
     font-size: 40px;
-    background-image: linear-gradient(to right,  #ffffff, #f80202); /* Fazer o efeito */
+    background-image: linear-gradient(to right,  #ffffff, #b0c2f3); /* Fazer o efeito */
     background-clip: text; /* Aplicar cor ao texto */
     color: transparent;
 }
 
-.nome-dos-planetas-jupiter{
-    font-size: 40px;
-    background-image: linear-gradient(to right,  #ffffff, #f8b602); /* Fazer o efeito */
-    background-clip: text; /* Aplicar cor ao texto */
-    color: transparent;
-}
 
-.nome-dos-planetas-urano{
-    font-size: 40px;
-    background-image: linear-gradient(to right,  #ffffff, #0258f8); /* Fazer o efeito */
-    background-clip: text; /* Aplicar cor ao texto */
-    color: transparent;
-}
+
+
 
 .paragrafos{
     display: flex;
@@ -208,6 +201,8 @@ hr{
     color: rgb(244, 244, 244);
     padding: 10px;
     gap: 0.5rem;
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 20px;
 }
 
 
@@ -216,17 +211,21 @@ hr{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background-color: #000000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 
 .h2{
     display: flex;
     justify-content: center;
+   
 }
 
 .subtitulos {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .botões {
@@ -255,6 +254,32 @@ hr{
 
 .botão-escondido1:hover{
     background-color: #044ab4;
+}
+
+.dinheiro{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.pessoas{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tipo{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.divisoria{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre_planeta{
+    flex: 1;
 }
 
 

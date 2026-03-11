@@ -26,10 +26,15 @@ function login(eventrec) {
             lembrar()
             window.location.href = "../../index.html"
 
+        } else if (input_login_gmail && input_login_senha) {
+            const mensagem_erro = document.getElementById("texto_erro");
+            mensagem_erro.style.display = "flex"
+
         } else {
             const mensagem_erro = document.getElementById("texto_erro");
             mensagem_erro.style.display = "flex"
         }
+
     }
 
 
@@ -42,7 +47,7 @@ function login(eventrec) {
 const input_clicar = document.querySelector("input[type=checkbox]")
 
 function lembrar() {
-   
+
 
     // Armezar os dados em um objeto
     const lembrar_dados = {

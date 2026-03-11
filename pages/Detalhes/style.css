@@ -23,11 +23,17 @@ body {
     justify-content: space-between;
 }
 
+.texto_personalize{
+    color: rgb(221, 221, 221);
+    font-size: 20px;
+
+}
 
 .cabeçalho {
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     padding: 20px;
     height: 10vh;
@@ -54,14 +60,15 @@ body {
 
 .botão-a {
     color: rgb(255, 255, 255);
-    padding: 8px;
+    padding: 7px;
     height: 5vh;
     text-decoration: none;
-    border: solid 1px rgb(255, 255, 255);
-    background-color: rgb(216, 89, 80);
+    border: solid 1px rgba(255, 255, 255, 0);
+    background-color: rgb(255, 82, 82);
     border-radius: 30px;
     display: flex;
     align-items: center;
+    
 }
 
 .botão-a:hover {
