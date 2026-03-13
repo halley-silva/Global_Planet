@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.imagens{
+    height: 20vh;
+    display: flex;
+    
+}
+
+.caixa {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(../../assets/elena-mozhvilo-znhEe1cbbQE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    padding: 15px;
+    
+}
+
+main{
+    display: flex;
+
+}
+
+.informações{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(7px);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+
+
+.forulario {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 40px;
+}
+
+h1 {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+
+#enviar-gmail {
+    color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    padding: 8px 0;
+    width: 290px;
+}
+
+
+.botão button {
+    border-radius: 8px;
+    color: white;
+    border: solid 1px rgba(197, 197, 197, 0);
+    padding: 13px;
+    width: 290px;
+    background-color: rgb(56, 136, 227);
+    cursor: grab;
+}
+
+button:hover{
+    background-color: rgb(93, 158, 231);
+}
+
+#voltar-login-texto {
+    text-align: center;
+    width: 55%;
+    font-size: 15px;
+}
+
+#link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.input{
+    width: 80%;
+}
+
+/* Mobile Grande */
+@Media (min-width: 600px){
+    
+
+   .informações{
+        width: 80%;
+   }
+
+}
+
+
+
+
+@media (min-width: 1200px){
+    h1{
+        font-size: 40px;
+    }
+
+    .caixa{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    main{
+        text-align: center;
+    }
+
+    .login{
+        flex: 1;
+    }
+
+    .informações{
+        height: 35vh;
+        width: 50%;
+        display: flex;
+        
+    }
+
+    #enviar-gmail{
+        width: 380px;
+        
+    }
+
+    
+    
+
+
+
+
+
+
+}
+

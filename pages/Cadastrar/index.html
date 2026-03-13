@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="informações">
+            <header class="cabeçalho">
+                <div class="logo">
+                    <img src="../../assets/logo-global-planet.png" width="100px">
+                </div>
+
+            </header>
+
+            <form onsubmit="verificarcampos(event)">
+
+                <h1>Olá Cadastre-se</h1>
+                <p id="texto">Descubra novas aventuras</p>
+
+                <footer class="formulario" id="propriedades_formulario">
+                    <div class="divisoria_input1">
+                        <div class="separar_iputs">
+                            <input type="text" placeholder="Nome" id="input_nome">
+                            <span class="mensagens_invalidas" id="erro_name">INVALIDO</span>
+                        </div>
+
+
+                        <div class="separar_iputs">
+                            <input type="number" placeholder="CPF" id="input_CPF">
+                            <span class="mensagens_invalidas" id="erro_cpf">INVALIDO</span>
+                        </div>
+                    </div>
+
+                    <div class="divisoria_input1">
+                        <div class="separar_iputs">
+                            <input type="gmail" placeholder="Gmail" id="input_gmail">
+                            <span class="mensagens_invalidas" id="erro_gmail">INVALIDO</span>
+                        </div>
+
+                        <div class="separar_iputs">
+                            <input type="text" placeholder="Endereço" id="input_endereco">
+                            <span class="mensagens_invalidas" id="erro_endereco">INVALIDO</span>
+                        </div>
+                    </div>
+
+                    <div class="divisoria_input1">
+                        <div class="separar_iputs">
+                            <input type="password" placeholder="Senha" id="input_senha">
+                            <span class="mensagens_invalidas" id="erro_senha">INVALIDO</span>
+                        </div>
+
+                        <div class="separar_iputs">
+                            <input type="password" placeholder="Confirme Senha" id="input_confirmarSenha">
+                            <span class="mensagens_invalidas" id="erro_confirmar_senha">SENHAS DIFERENTES</span>
+                        </div>
+                    </div>
+
+                    <div class="separar_iputs">
+                        <input type="number" placeholder="Número Telefone" id="input_telefone">
+                        <span class="mensagens_invalidas" id="erro_telefone">INVALIDO</span>
+                    </div>
+
+
+
+                    <div class="final">
+
+                        <button class="botão" type="submit">Salvar</button>
+                    </div>
+
+
+
+            </form>
+
+
+        </div>
+
+        <div class="imagen">
+            <img src="../../assets/nave_espacial.png" width="500px">
+
+        </div>
+    </div>
+
+
+</body>
+<script src="scrip.js"></script>
+
+</html>
