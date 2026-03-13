@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // Criar os objeto que vão conter as infrmações
+=======
+>>>>>>> f334739a59132dc7b604009fa46159edff9d7a3c
 const planetas = [
     {
         imagen: "../../assets/marte.jpg",
@@ -28,6 +31,7 @@ const planetas = [
     }
 
 ]
+<<<<<<< HEAD
 // Puchar o card em que os elementos vão ficar
 const pai_dos_cards = document.getElementById("card_maximo")
 
@@ -45,6 +49,21 @@ planetas.forEach(planetas => {
                <a href="../Detalhes/index.html" class="card">
 
                     <div class="imagen" style="background-image: url('${planetas.imagen}')"> 
+=======
+
+const pai_dos_cards = document.getElementById("card_maximo")
+
+planetas.forEach(planetas => {
+
+    const card = document.createElement("div");
+
+    card.classList.add("card-glow");
+
+    card.innerHTML = `
+               <a href="../Detalhes/index.html" class="card">
+
+                    <div class="imagen" style="background-image: url('${planetas.imagen}')">
+>>>>>>> f334739a59132dc7b604009fa46159edff9d7a3c
 
 
                     </div>
@@ -77,7 +96,17 @@ planetas.forEach(planetas => {
 
                 </a>
     `
+<<<<<<< HEAD
     // Aplicar
     pai_dos_cards.appendChild(card);
 
+=======
+
+    pai_dos_cards.appendChild(card);
+
+
+
+
+
+>>>>>>> f334739a59132dc7b604009fa46159edff9d7a3c
 });

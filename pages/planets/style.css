@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -339,4 +340,347 @@ hr{
     
 
     
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body{
+
+    background-image: url(../../assets/ceu.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.container-pai {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 110px;
+}
+
+#texto-h1-planeta{
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.cabeçalho {
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    min-height: 8vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.texto-apoio{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#h2-apoio{
+    text-align: center;
+}
+
+#paragrafo-apoio{
+    text-align: center;
+}
+
+
+
+h1{
+    background-image: linear-gradient(to right,  #ffffff, #0264f8); /* Fazer o efeito */
+    background-clip: text; /* Aplicar cor ao texto */
+    color: transparent;
+}
+
+
+.botão-a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(15, 35, 100);
+    border-radius: 20px;
+    width: 20%;
+    text-align: center;
+    color: white;
+}
+
+.hr{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    gap: 0.5rem;
+    
+}
+
+hr{
+    padding: 0.5px;
+    border-radius: 5px;
+    border: solid 1px rgb(0, 0, 0);
+    background-color: white;
+}
+
+.botão-a:hover{
+    background-color: #0b1a3a;
+}
+
+.pai-dos-cads {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.card-glow {
+    border-radius: 25px;
+    width: 90%;
+}
+
+.card-glow:hover {
+    box-shadow: 0 0 15px rgba(25, 45, 219, 0.15);
+}
+
+#card-glow-1:hover{
+    box-shadow: 0 0 15px rgb(247, 3, 3);
+}
+
+#card-glow-2:hover{
+    box-shadow: 0 0 15px rgb(247, 170, 3);
+}
+
+#card-glow-3:hover{
+    box-shadow: 0 0 15px rgb(3, 101, 247);
+}
+
+
+.card {
+    background-color: #3b4155;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 22px;
+    transition: transform .3s;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.card:hover {
+    transform: scale(0.97);
+}
+
+
+.imagen {
+    height: 40vh;
+    background-image: url(../../assets/marte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
+#segundo-card .imagen {
+    background-image: url(../../assets/Jupiter.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#terceiro-card .imagen {
+    background-image: url(../../assets/urano.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome-dos-planetas-marte{
+    font-size: 40px;
+    background-image: linear-gradient(to right,  #ffffff, #b0c2f3); /* Fazer o efeito */
+    background-clip: text; /* Aplicar cor ao texto */
+    color: transparent;
+}
+
+
+
+
+
+.paragrafos{
+    display: flex;
+    flex-direction: column;
+    color: rgb(244, 244, 244);
+    padding: 10px;
+    gap: 0.5rem;
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 20px;
+}
+
+
+.conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #000000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.h2{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.subtitulos {
+    color: white;
+    font-size: 15px;
+}
+
+.botões {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.botões-escondidos{
+    display: none;
+    width: 300px;
+    
+}
+
+.botão-escondido1{
+    background-color: hsl(224, 48%, 53%);
+    border: solid 1px rgb(0, 0, 0);
+    padding: 9px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.botão-escondido1:hover{
+    background-color: #044ab4;
+}
+
+.dinheiro{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.pessoas{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tipo{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.divisoria{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre_planeta{
+    flex: 1;
+}
+
+
+
+
+@media (min-width: 600px){
+    .cabeçalho{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hr{
+        display: none;
+    }
+
+    .botões-escondidos{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .botão-escondido1{
+        width: 30%;
+        text-align: center;
+    }
+
+    
+}
+
+@media (min-width: 1200px){
+    .pai-dos-cads{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 40px;
+    }
+
+    .card-glow{
+        width: 400px;
+        
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .botão-escondido1{
+        width: 100px;
+        text-align: center;
+    }
+
+    .cabeçalho{
+        padding: 20px;
+    }
+
+    
+
+    
+>>>>>>> f334739a59132dc7b604009fa46159edff9d7a3c
 }
